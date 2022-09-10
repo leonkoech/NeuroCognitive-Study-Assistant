@@ -42,7 +42,7 @@ useEffect(() => {
     // if (context == null) return; // context may be null
     // var context = document.getElementById('myChart');
 
-    const ctx = document.getElementById('myChart') as HTMLCanvasElement;;
+    const ctx = document.querySelector('.myChart') as HTMLCanvasElement;;
 
 
     // const gradient = context?.createLinearGradient(0, 16, 0, 600);
@@ -93,7 +93,7 @@ useEffect(() => {
   return (
     <div className="App">
       <span>Chart.js x</span>
-      <canvas id="myChart" ref={canvasEl} height="100" />
+      <canvas className="myChart" ref={canvasEl} height="100" />
     </div>
   );
 }
