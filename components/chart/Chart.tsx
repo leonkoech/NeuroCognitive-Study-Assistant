@@ -47,7 +47,7 @@ useEffect(() => {
 
     // const gradient = context?.createLinearGradient(0, 16, 0, 600);
 
-
+// :) :D :/ :o :{ XD >.< :-) :O ;) O.O 
     // gradient.addColorStop(0, colors.purple.half);
     // gradient.addColorStop(0.65, colors.purple.quarter);
     // gradient.addColorStop(1, colors.purple.zero);
