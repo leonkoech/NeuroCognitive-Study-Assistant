@@ -1,0 +1,50 @@
+.session{
+    border: 1px solid white;
+    height: 120px;
+    font-size: 70px;
+    width: 40vw;
+    text-align: center;
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.637);
+        color: black;
+
+    }
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input {
+    height: 7vh;
+    /* background: white; */
+    /* color: black; */
+    width: 21vw;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.button{
+    height: 5vh;
+    font-size: 25px;
+    line-height: 5vh;
+    text-align: center;
+    width: 20vw;
+    border: 1px solid white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.label{
+    font-size: 30px;
+}
+
+.large_text{
+    font-size: 20em;
+}

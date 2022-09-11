@@ -2,6 +2,8 @@ import Button from "../components/Button/Button";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { firebaseConfig } from '../.env/secrets';
+
+import style  from '../components/styles/main.module.scss'
 import Router from "next/router";
 const signUp=()=>{
     Router.push('./home')
@@ -19,9 +21,9 @@ const auth=()=>{
         <h1>focus Buddy</h1>
         <form>
             <label htmlFor="email">email:</label>
-            <input id="email" name="email"></input>
+            <input id="email" name="email" className={style.input}></input>
             <label htmlFor="password">password:</label>
-            <input id="password"></input>
+            <input id="password" className={style.input}></input>
             <div onClick={signUp}><Button text="Create Account" type="dark"></Button></div>
             <div onClick={login}><Button text="Login" type="dark"></Button></div>
         </form>
