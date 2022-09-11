@@ -19,15 +19,16 @@ const auth=()=>{
     <div className={[style.card].join(" ")}>
         <h1>focus Buddy</h1>
         <form>
-            <label htmlFor="email">email:</label>
-            <input id="email" name="email"></input>
+            <label htmlFor="email" className={[style.placeholder, style.email].join(" ")}>Email:</label>
+            <br />
+            <input id="email" name="email" placeholder=" "></input>
             <br/>
-            <label htmlFor="password">password:</label>
-            <input id="password"></input>
+            <label htmlFor="password" className={[style.placeholder, style.password].join(" ")}>Password:</label>
+            <br />
+            <input id="password" placeholder=" "></input>
             <div onClick={signUp}><Button text="Create Account" type="dark"></Button></div>
             <div onClick={login}><Button text="Login" type="dark"></Button></div>
         </form>
-        
     </div>
    )
 }
