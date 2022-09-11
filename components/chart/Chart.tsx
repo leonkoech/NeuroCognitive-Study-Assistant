@@ -1,10 +1,12 @@
 import Chart from 'chart.js/auto'
 import { useEffect, useRef } from "react";
+import style from "../styles/main.module.scss"
 
 type Props  = {
     name: string,
     points: number [],
-    id: string
+    id: string,
+    text: string
 }
 
 const createYAxis = (data: number []) => {
@@ -17,7 +19,7 @@ const createYAxis = (data: number []) => {
 
 }
 
-function ChartComponent ({ name, points,id }: Props) {
+function ChartComponent ({ name, points,id,text }: Props) {
  const canvasEl =  useRef<HTMLCanvasElement>(null);
 
  const colors = {
@@ -92,10 +94,16 @@ useEffect(() => {
   });
 
   return (
-    <div className="App">
+    <div>
+      <div className="App">
       <span>Chart.js x</span>
       <canvas id={id} ref={canvasEl} height="100" />
     </div>
+    <p className={style.label+" "+ style.half_width}>
+           {text}
+        </p>
+    </div>
+    
   );
 }
 export default ChartComponent;

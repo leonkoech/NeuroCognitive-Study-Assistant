@@ -10,22 +10,22 @@ const signUp=()=>{
     console.log('sign Up')
 }
 const login =() => {
-    console.log('log in ')
+    Router.push('./home')
 }
 
 const app = initializeApp(firebaseConfig);
 
 const auth=()=>{
    return (
-    <div>
-        <h1>focus Buddy</h1>
+    <div className={style.center}>
+        <h1  className={style.header_text}>focus Buddy</h1>
         <form>
-            <label htmlFor="email">email:</label>
-            <input id="email" name="email" className={style.input}></input>
-            <label htmlFor="password">password:</label>
-            <input id="password" className={style.input}></input>
-            <div onClick={signUp}><Button text="Create Account" type="dark"></Button></div>
-            <div onClick={login}><Button text="Login" type="dark"></Button></div>
+            <label htmlFor="email"  className={style.label}>email:</label><br></br>
+            <input id="email" name="email" className={style.input}></input><br></br>
+            <label htmlFor="password"  className={style.label}>password:</label><br></br>
+            <input id="password" className={style.input}></input><br></br><br></br>
+            <div onClick={signUp}> <div className={style.button}>Sign Up</div></div><br></br>
+            <div onClick={login}> <div className={style.button}>Sign In</div></div><br></br>
         </form>
         
     </div>

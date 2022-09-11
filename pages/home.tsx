@@ -7,7 +7,7 @@ const home=()=>{
             <span>Start new session</span>
         </a>
         <br></br>
-        <a href="./previous" className={style.session}>
+        <a href="./results" className={style.session}>
             <span>See previous sessions</span>
         </a>
     </div>

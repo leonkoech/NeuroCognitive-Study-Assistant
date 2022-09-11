@@ -38,13 +38,21 @@
     border: 1px solid white;
     &:hover{
         cursor: pointer;
+        background: palegoldenrod;
+        color: black;
     }
 }
 
 .label{
     font-size: 30px;
 }
-
+.header_text{
+    font-size: 10em;
+}
 .large_text{
     font-size: 20em;
+}
+
+.half_width{
+    width:50%
 }
