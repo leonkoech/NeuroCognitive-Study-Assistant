@@ -7,7 +7,7 @@ type Props={
 
 const Button =({text}:Props)=>{
   return (
-    <div  className={[style.size,style.type].join(" ")}>
+    <div  className={style.size+" "+style.type}>
         {text}
     </div>
   );

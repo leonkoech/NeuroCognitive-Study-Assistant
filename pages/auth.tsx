@@ -26,6 +26,8 @@ const auth=()=>{
             <label htmlFor="password" className={[style.placeholder, style.password].join(" ")}>Password:</label>
             <br />
             <input id="password" placeholder=" "></input>
+            <br />
+            <br />
             <div onClick={signUp}><Button text="Create Account" type="dark"></Button></div>
             <div onClick={login}><Button text="Login" type="dark"></Button></div>
         </form>
