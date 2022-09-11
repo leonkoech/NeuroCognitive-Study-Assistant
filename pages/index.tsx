@@ -4,7 +4,7 @@ import style from "../components/styles/main.module.scss";
 const Home: NextPage = () => {
   return (
     <div className={style.center}>
-      <h1 className={style.header_text}>Focus Buddy</h1>
+        <img src="https://shellhackthon2022-v2.s3.amazonaws.com/Screen_Shot_2022-09-11_at_9.34.45_AM-removebg-preview.png"></img>
       <p className={style.label  +" "+ style.half_width}>
           Focus Buddy is an app that helps track your focus activity through study sessions
          <i>. It uses <a href="neuos.io">neuos</a>  to achieve this by taking advantage of the Artificial intelligence offered by Arctop.

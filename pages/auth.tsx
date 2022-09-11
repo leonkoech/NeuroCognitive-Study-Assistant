@@ -18,7 +18,7 @@ const app = initializeApp(firebaseConfig);
 const auth=()=>{
    return (
     <div className={style.center}>
-        <h1  className={style.header_text}>focus Buddy</h1>
+        <img src="https://shellhackthon2022-v2.s3.amazonaws.com/Screen_Shot_2022-09-11_at_9.34.45_AM-removebg-preview.png"></img>
         <form>
             <label htmlFor="email"  className={style.label}>email:</label><br></br>
             <input id="email" name="email" className={style.input}></input><br></br>
