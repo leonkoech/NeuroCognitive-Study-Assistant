@@ -1,9 +1,24 @@
 .dark{
-    color: white;
-    
+    border: 1px solid white;
+    width: 320px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    &:hover{
+        cursor: pointer;
+    }
 }
+.light {
+    border: 1px solid white;
+    width: 320px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+}
+
 .size{
     height: 40px;
     width: auto;
-    padding: 10px;
 }
