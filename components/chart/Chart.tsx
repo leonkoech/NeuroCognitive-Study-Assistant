@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 type Props  = {
     name: string,
     points: number [],
+    id: string
 }
 
 const createYAxis = (data: number []) => {
@@ -16,7 +17,7 @@ const createYAxis = (data: number []) => {
 
 }
 
-function ChartComponent ({ name, points }: Props) {
+function ChartComponent ({ name, points,id }: Props) {
  const canvasEl =  useRef<HTMLCanvasElement>(null);
 
  const colors = {
@@ -42,7 +43,7 @@ useEffect(() => {
     // if (context == null) return; // context may be null
     // var context = document.getElementById('myChart');
 
-    const ctx = document.querySelector('.myChart') as HTMLCanvasElement;;
+    const ctx = document.getElementById(id) as HTMLCanvasElement;;
 
 
     // const gradient = context?.createLinearGradient(0, 16, 0, 600);
@@ -93,7 +94,7 @@ useEffect(() => {
   return (
     <div className="App">
       <span>Chart.js x</span>
-      <canvas className="myChart" ref={canvasEl} height="100" />
+      <canvas id={id} ref={canvasEl} height="100" />
     </div>
   );
 }

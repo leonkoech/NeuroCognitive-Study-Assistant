@@ -11,7 +11,7 @@ function getRndInteger(min: number, max: number){
     return Math.floor(Math.random() * max) + min;
 }
  const maxValues: never[]=[]
- const minValues=[]
+ const minValues: never[]=[]
  const minAbsValues=[]
 
 
@@ -21,36 +21,26 @@ function getRndInteger(min: number, max: number){
          maxValue: 95,
          minValue: 85,
          mAbsValue: 77,
+         id: "normalChart"
      },
-     {  //medium focus required -> medium study mode -> Review of Material
-        maxValue: 80,
-        minValue: 75,
-        mAbsValue: 65,
-    },
-    {   //low focus required -> low study mode -> Homework or Intro to new material  
-        maxValue: 70,
-        minValue: 55,
-        mAbsValue: 40,
-    },
-    {   //less distraction range -> intense study  -> Test your
-        maxValue: 90,
+     {  
+        //more focus required -> important study session -> Important Test study time
+        maxValue: 95,
         minValue: 85,
-        mAbsValue: 80,
+        mAbsValue: 77,
+        id: "normalChart1"
     },
-    {   // medium distraction accepted -> medium intensity study -> Review material 
-        maxValue: 90,
-        minValue: 70,
-        mAbsValue: 60,
-    },
-    {   // not much focus range required -> low intensity study ->  Shcheme through 
-        maxValue: 90,
-        minValue: 65,
-        mAbsValue: 50,
+    {  
+        //more focus required -> important study session -> Important Test study time
+        maxValue: 95,
+        minValue: 85,
+        mAbsValue: 77,
+        id: "normalChart2"
     }
  ]
 
 //function to start taking datapoint into the array
-function datapoints (x: number, max: number, min: number, absoluteMin: number){
+export function datapoints (x: number, max: number, min: number, absoluteMin: number){
     // x represents the time people should study, in the 1st place 25min or 50min
 
     // quality study 
@@ -63,6 +53,7 @@ function datapoints (x: number, max: number, min: number, absoluteMin: number){
     let data = [];
 
     // for loop for minutes - 5 ( ie. 20 min || 45 min)
+
     for ( let i = 1; i< x-5 ; i++ ){
         // append datapoints to data array
         data.push(getRndInteger(min, max));
@@ -81,6 +72,7 @@ function datapoints (x: number, max: number, min: number, absoluteMin: number){
     data.push(absoluteMin);
 
     //output the whole data array
+    console.log(data.toString());
     return data;
 
 }
@@ -91,7 +83,7 @@ return (
      {/*                                           paramters: time, max, min, absolute minimum  */}
      {values.map( item =>
      (
-        <ChartComponent name={'promodoro 1 session 1'} points={datapoints(50, item.maxValue, item.minValue, item.mAbsValue)}></ChartComponent>
+        <ChartComponent name={'promodoro 1 session 1'} points={datapoints(50, item.maxValue, item.minValue, item.mAbsValue)} id={item.id}></ChartComponent>
 
      )
        )
@@ -100,3 +92,26 @@ return (
 );
 }
 export default results;
+
+
+// values on the data set (to compare to less than lowest number)
+let low = minValues;
+
+
+
+//funcion with parameter of low datasets and lower (limit entrance)
+function lowMaterial(datapoints: any[], low: number){
+
+    for ( let i = 0; i < low; i++){
+        //array where the index or min are passed in 
+        let minReview = []
+        // datapoints value
+        let value = datapoints[i];
+        //if low is law material is less than minValues store it
+        if (value < low){
+            minReview.push(i);
+        }
+        return minReview;
+    }
+    lowMaterial(datapoints,low);
+    }
