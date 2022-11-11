@@ -1,6 +1,8 @@
 import style from "./previous.module.scss"
 import ChartComponent from "../components/chart/Chart";
 import { datapoints } from "./results";
+import style from "../components/styles/main.module.scss"
+
 const values=
     {  
         //more focus required -> important study session -> Important Test study time
@@ -12,7 +14,7 @@ const values=
 
 
 const anom=[75,77,75,76,79,75,75,75,76,78,77,79,75,79,75,75,67,64,60,57,54,56,60,63,66,70,74,77,75,79,79,78,75,79,79,78,75,78,75,79,79,77,75,77,68,74,74,65]
-const previous = () =>{
+const Previous = () =>{
 lowdataset(anom, values.mAbsValue);
 return (
     <div>
@@ -30,7 +32,7 @@ return (
     </div>
 );
 }
-export default previous;
+export default Previous;
 
 
 //Variable that counts how many times you fell under the absolute minimun in focus

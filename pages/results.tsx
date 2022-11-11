@@ -1,4 +1,6 @@
 import ChartComponent from "../components/chart/Chart";
+import style from "../components/styles/main.module.scss"
+import Previous from "./previous";
 
 //What it is to be outputed AKA DataPoints
 {/*                                           paramters: time, max, min, absolute minimum  */}
@@ -21,7 +23,8 @@ function getRndInteger(min: number, max: number){
          maxValue: 95,
          minValue: 85,
          mAbsValue: 77,
-         id: "normalChart"
+         id: "normalChart",
+         text: "Your study session went partly well"
      },
      {  
         //more focus required -> important study session -> Important Test study time
@@ -81,13 +84,17 @@ const results = () =>{
 return (
     <div>
      {/*                                           paramters: time, max, min, absolute minimum  */}
-     {values.map( item =>
+     <Previous></Previous>
+     <div>
+        {values.map( item =>
      (
-        <ChartComponent name={'promodoro 1 session 1'} points={datapoints(50, item.maxValue, item.minValue, item.mAbsValue)} id={item.id}></ChartComponent>
+        <ChartComponent name={'promodoro 1 session 1'} points={datapoints(50, item.maxValue, item.minValue, item.mAbsValue)} id={item.id} text={"Study session went partly well. The session had a balance between two data points and it seems you made a good progress on your activity."}></ChartComponent>
 
      )
        )
      }
+     </div>
+     
     </div>
 );
 }

@@ -1,13 +1,14 @@
 import Button from "../components/Button/Button";
-
+import style from "../components/styles/main.module.scss"
 const home=()=>{
    return (
-    <div>
-        <a href="./session">
-            <Button text="start new session" type="dark"></Button>
+    <div className={style.center}>
+        <a href="./session" className={style.session}>
+            <span>Start new session</span>
         </a>
-        <a href="./previous" >
-        <Button text="view previous sessions" type="light"></Button>
+        <br></br>
+        <a href="./results" className={style.session}>
+            <span>See previous sessions</span>
         </a>
     </div>
    )

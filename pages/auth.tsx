@@ -3,13 +3,15 @@ import Button from "../components/Button/Button";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { firebaseConfig } from '../.env/secrets';
+
+import style  from '../components/styles/main.module.scss'
 import Router from "next/router";
 const signUp=()=>{
     Router.push('./home')
     console.log('sign Up')
 }
 const login =() => {
-    console.log('log in ')
+    Router.push('./home')
 }
 
 const app = initializeApp(firebaseConfig);
