@@ -1,7 +1,5 @@
 # NeuroCognitive Study Assistant (formerly Focus Buddy)
 
-## Enhancing Academic Performance Through Brain-Computer Interface Technology
-
 <table>
 
   <tr>
