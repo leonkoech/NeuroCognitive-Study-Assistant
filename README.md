@@ -88,6 +88,6 @@ Our project was made possible by the collaborative efforts of:
 
 We extend our gratitude to all team members and mentors who contributed their expertise and support to this project.
 
----
+## Conclusion
 
 NeuroCognitive Study Assistant demonstrates the potential of BCI technology in educational applications, paving the way for future innovations in personalized learning and cognitive enhancement.
