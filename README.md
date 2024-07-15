@@ -1,38 +1,78 @@
-## Demo
-- [Data/ android app video] (https://youtube.com/shorts/jztyYIbgjIs?feature=share)
-- [Web App video](https://www.youtube.com/watch?v=-LXuc8nptXk&ab_channel=leonkipkoech)
+## Introduction
 
-<video width="320" height="240" controls>
-  <source src="https://youtube.com/shorts/jztyYIbgjIs?feature=share" type="video/mp4">
-</video>
+<table>
+  <tr>
+    <td>
+      The ability to study effectively is a significant challenge faced by students. In response to this, we developed a tool aimed at enhancing focus and academic performance by utilizing Brain-Computer Interfaces (BCIs). This project outlines the development and implementation of our project, <i>"Focus Buddy,"</i> a web application designed to assist students in optimizing their study periods through the analysis of neural data.
+    </td>
+     <td>
+      <img src="https://github.com/user-attachments/assets/cb1ef702-79ad-49e0-bc37-76cb9066b5fc" alt="BCI headband" width="1200px">
+    </td>
+  </tr>
+</table>
 
-## Group Members:
-[Coral Miniel](https://www.linkedin.com/in/coral-miniel-17329218b/), [Leon Kipkoech](https://www.linkedin.com/in/leonkoech/), Kristian Vazquez[](https://www.linkedin.com/in/kristian-vazquez-0329b4244/) and [Maria Camila Copo Amador](https://www.linkedin.com/in/camicopoa/).
+## Objectives
 
-##Inspiration
-As students, we wanted to provide people with a tool that would help them in one of the most difficult things in these steps of life: **effective studying and learning.**
+The primary objectives of the Focus Buddy project are to:
+1. Improve students' focus and academic performance.
+2. Provide a specialized and less stressful studying experience.
+3. Utilize BCIs to gather and analyze neural data to identify optimal study times.
 
-## What it does
-We built a website that can help students from minorities to improve their focus and academic performance, as well as help peers that are struggling because the amount of time they dedicate to studying is not giving them the results they deserve. Moreover, the main purpose of this tool is to make studying efficient, less stressful, and more specialized.
+## Methodology
 
-## How we built it
-This project can be divided into three different phases:
-1.  _Collecting the neural data_  from the headband with the help of an AI neural net.
-2. _Writing, collecting, and creating algorithms_ to sort the data and handle anomalies, for example when a user moves.
-3. _Creation of a web application_ in which the user can see a graph with their neuronal focus data points, as well as the minimum and maximum values of focus on a determined study period.
+<img src="https://github.com/user-attachments/assets/5c53e5fb-2de0-4653-87ba-a7bf6f8ad7ec" alt="Focus Data" height="270px">
+<img src="https://github.com/user-attachments/assets/d3fa6198-4d21-47c4-92fb-8cc238f3b383" alt="Focus Data " height="270px">
 
-## Challenges we ran into
-The headband only allows connection with android devices, due to time limitations we were unable to implement Machine Learning to train on an individual’s focus activities.
+### Data Collection
 
+The initial phase involved collecting neural data from a headband equipped with BCI technology. This headband records brain activity and transmits the data to our AI neural network for analysis.
 
-## Accomplishments that we're proud of
-Being able to recollect, sort, analyze and work with data not only because of the organization and complexity of the data but also because of the creation of a website in which there was input and output exchange between the user, the software, and the data in an effective way. In addition to this, as a team, we feel accomplished about being able to divide the task according to members’ skills and goals.
+### Algorithm Development
 
-## What we learned
-Some of the members were unfamiliar with the languages that were being used for the project, hence there was a mentee-mentor relationship between the group members, in this process, ideas were exchanged and the teamwork was built by itself. Moreover, the collection of data through the headband and connection of multiple pages for the website was difficult to put together. This was due to the amount of information that had to be compiled, sorted, and fetched to different places to give an accurate prediction of the amount of time spent focused and the exact study periods in which the student loses focus and the learning curve decreases significantly.
+The second phase focused on developing algorithms to sort and process the neural data. These algorithms handle anomalies such as user movement and ensure the accuracy of the focus data.
 
-## What's next for Focus Buddy
-    _In our focus report we want to display what topics the user had a low focus percentage on so that they can go back and review those topics when they’re not as distracted. 
-    -Improve user interface
-    -Adding personalized backgrounds and designs the user can choose from for the timer screen 
+### Web Application Development
 
+The final phase involved creating a web application where users can visualize their focus data. The application displays graphs of neural focus data points, including the minimum and maximum focus values over specified study periods.
+
+## Challenges
+
+### Technical Limitations
+
+One significant challenge was that the headband only connected to Android devices. Additionally, due to time constraints, we were unable to implement machine learning algorithms to train on individual focus activities.
+
+### Data Handling
+
+Another challenge was the complexity of collecting, sorting, and analyzing neural data. Ensuring accurate predictions of focus periods required meticulous data processing and integration into the web application.
+
+## Results
+
+Despite the challenges, we successfully:
+1. Collected and processed neural data using BCIs.
+2. Developed algorithms to handle data anomalies.
+3. Created a functional web application that visualizes focus data.
+
+## Accomplishments
+
+We are particularly proud of our ability to work with complex neural data and create a user-friendly web application. Our team effectively divided tasks based on individual skills, fostering a collaborative environment that enhanced the project's success.
+
+## Lessons Learned
+
+The project provided valuable learning experiences, particularly in terms of:
+1. Developing technical skills in data processing and web development.
+2. Enhancing teamwork and collaboration through a mentee-mentor relationship.
+3. Understanding the intricacies of using BCIs for data collection and analysis.
+
+## Future Work
+
+Future improvements for Focus Buddy include:
+1. **Enhanced Focus Reports:** Displaying topics where users had low focus percentages to help them review these topics during less distracted times.
+2. **User Interface Improvements:** Enhancing the user interface to improve usability and user experience.
+3. **Customization Options:** Adding personalized backgrounds and designs for the timer screen to increase user engagement.
+
+## Acknowledgements
+This project would not have been possible without; [Coral Miniel](https://www.linkedin.com/in/coral-miniel-17329218b/), [Leon Kipkoech](https://www.linkedin.com/in/leonkoech/), Kristian Vazquez[](https://www.linkedin.com/in/kristian-vazquez-0329b4244/) and [Maria Camila Copo Amador](https://www.linkedin.com/in/camicopoa/).
+
+## Conclusion
+
+Focus Buddy leverages Brain-Computer Interfaces to provide students with valuable insights into their study habits. By analyzing neural data, the tool helps students optimize their study periods, making studying more efficient and less stressful. Our project demonstrates the potential of BCIs in educational applications and sets the stage for future innovations in this field.
